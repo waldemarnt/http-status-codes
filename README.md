@@ -81,6 +81,8 @@ The body section may contain a document describing the error in human readable f
 - [499](http://httpstatus.es/499) - **Client Closed Request** - Connection closed by client while HTTP server is processing.
 
 ### Server side error 5xx
+This means that even though the request appeared to be valid something went wrong at the server level and it wasn’t able to return anything.
+
 - [500](http://httpstatus.es/500) - **Internal Error** - The server encountered an unexpected condition which prevented it from fulfilling the request.
 - [501](http://httpstatus.es/501) - **Not Implemented** - The server does not support the facility required.
 - [502](http://httpstatus.es/502) - **Service temporarily overloaded** - The server cannot process the request due to a high load (whether HTTP servicing or other requests). The implication is that this is a temporary condition which maybe alleviated at other times.
@@ -105,5 +107,3 @@ Contributions welcome! Read the [contribution guidelines](contributing.md) first
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Sindre Sorhus](http://sindresorhus.com) has waived all copyright and related or neighboring rights to this work.
