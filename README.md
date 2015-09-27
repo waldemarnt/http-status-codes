@@ -85,7 +85,16 @@ The body section may contain a document describing the error in human readable f
 - [501](http://httpstatus.es/501) - Not Implemented - The server does not support the facility required.
 - [502](http://httpstatus.es/502) - Service temporarily overloaded - The server cannot process the request due to a high load (whether HTTP servicing or other requests). The implication is that this is a temporary condition which maybe alleviated at other times.
 - [503](http://httpstatus.es/503) - Gateway timeout - This is equivalent to Internal Error 500, but in the case of a server which is in turn accessing some other service, this indicates that the respose from the other service did not return within a time that the gateway was prepared to wait. As from the point of view of the clientand the HTTP transaction the other service is hidden within the server, this maybe treated identically to Internal error 500, but has more diagnostic value.
-
+- [504](http://httpstatus.es/504) - Gateway Timeout - Gateway did not receive response from upstream server.
+- [505](http://httpstatus.es/505) - Http Version Not Supported - Server does not support the HTTP protocol version.
+- [506](http://httpstatus.es/506) - Variant Also Negotiates - Content negotiation for the request results in a circular reference.
+- [507](http://httpstatus.es/507) - Insufficient Storage - Server is unable to store the representation.
+- [508](http://httpstatus.es/508) - Loop Detected - Server detected an infinite loop while processing the request.
+- [509](http://httpstatus.es/509) - Bandwidth Limit Exceeded - Bandwidth limit exceeded.
+- [510](http://httpstatus.es/510) - Not Extended - Further extensions to the request are required.
+- [511](http://httpstatus.es/511) - Network Authentication Required - Client needs to authenticate to gain network access.
+- [598](http://httpstatus.es/598) - Network Read Timeout Error - Network read timeout behind the proxy.
+- [599](http://httpstatus.es/599) - Network Connect Timeout Error - Network connect timeout behind the proxy.
 
 
 ## Contribute
