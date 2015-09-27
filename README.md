@@ -30,6 +30,17 @@ These codes indicate success. The body section if present is the object returned
 - [208](http://httpstatus.es/208) - Already Reported - results previously returned.
 - [226](http://httpstatus.es/226) - Im Used - request fulfilled, reponse is instance-manipulations.
 
+### Redirection 3xx
+The codes in this section indicate action to be taken (normally automatically) by the client in order to fulfill the request.
+
+- [301](http://httpstatus.es/301) - Moved - The data requested has been assigned a new URI, the change is permanent. (N.B. this is an optimisation, which must, pragmatically, be included in this definition. Browsers with link editing capabiliy should automatically relink to the new reference, where possible)
+- [302](http://httpstatus.es/302) - Found - The data requested actually resides under a different URL, however, the redirection may be altered on occasion (when making links to these kinds of document, the browser should default to using the Udi of the redirection document, but have the option of linking to the final document) as for "Forward".
+- [303](http://httpstatus.es/303) - Method - Like the found response, this suggests that the client go try another network address. In this case, a different method may be used too, rather than GET.
+- [304](http://httpstatus.es/304) - Not Modified - If the client has done a conditional GET and access is allowed, but the document has not been modified since the date and time specified in If-Modified-Since field, the server responds with a 304 status code and does not send the document body to the client.
+- [305](http://httpstatus.es/305) - Use Proxy - Content located elsewhere, retrieve from there.
+- [306](http://httpstatus.es/306) - Switch Proxy - Subsequent requests should use the specified proxy.
+- [307](http://httpstatus.es/307) - Temporary Redirect - Connect again to different URI as provided.
+- [308](http://httpstatus.es/308) - Permanent Redirect - Connect again to a different URI using the same method.
 
 ### Client side errors 4xx
 The 4xx codes are intended for cases in which the client seems to have erred, and the 5xx codes for the cases in which the server is aware that the server has erred. It is impossible to distinguish these cases in general, so the difference is only informational.
@@ -48,16 +59,6 @@ The body section may contain a document describing the error in human readable f
 - [502](http://httpstatus.es/502) - Service temporarily overloaded - The server cannot process the request due to a high load (whether HTTP servicing or other requests). The implication is that this is a temporary condition which maybe alleviated at other times.
 - [503](http://httpstatus.es/503) - Gateway timeout - This is equivalent to Internal Error 500, but in the case of a server which is in turn accessing some other service, this indicates that the respose from the other service did not return within a time that the gateway was prepared to wait. As from the point of view of the clientand the HTTP transaction the other service is hidden within the server, this maybe treated identically to Internal error 500, but has more diagnostic value.
 
-### Redirection 3xx
-The codes in this section indicate action to be taken (normally automatically) by the client in order to fulfill the request.
-
-- [301](http://httpstatus.es/301) - Moved - The data requested has been assigned a new URI, the change is permanent. (N.B. this is an optimisation, which must, pragmatically, be included in this definition. Browsers with link editing capabiliy should automatically relink to the new reference, where possible)
-
-- [302](http://httpstatus.es/302) - Found - The data requested actually resides under a different URL, however, the redirection may be altered on occasion (when making links to these kinds of document, the browser should default to using the Udi of the redirection document, but have the option of linking to the final document) as for "Forward".
-
-- [303](http://httpstatus.es/303) - Method - Like the found response, this suggests that the client go try another network address. In this case, a different method may be used too, rather than GET.
-
-- [304](http://httpstatus.es/304) - Not Modified - If the client has done a conditional GET and access is allowed, but the document has not been modified since the date and time specified in If-Modified-Since field, the server responds with a 304 status code and does not send the document body to the client.
 
 
 ## Contribute
