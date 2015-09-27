@@ -52,6 +52,33 @@ The body section may contain a document describing the error in human readable f
 - [402](http://httpstatus.es/402) - Payment Required - The parameter to this message gives a specification of charging schemes acceptable. The client may retry the request with a suitable ChargeTo header.
 - [403](http://httpstatus.es/403) - Forbidden - The request is for something forbidden. Authorization will not help.
 - [404](http://httpstatus.es/404) - Not Found - The server has not found anything matching the URI given.
+- [405](http://httpstatus.es/405) - Method Not Allowed - Request method not supported by that resource.
+- [406](http://httpstatus.es/406) - Not Acceptable - Content not acceptable according to the Accept headers.
+- [407](http://httpstatus.es/407) - Proxy Authentication Required - Client must first authenticate itself with the proxy.
+- [408](http://httpstatus.es/408) - Request Timeout - Server timed out waiting for the request.
+- [409](http://httpstatus.es/409) - Conflict - Request could not be processed because of conflict.
+- [410](http://httpstatus.es/410) - Gone - Resource is no longer available and will not be available again.
+- [411](http://httpstatus.es/411) - Length Required - Request did not specify the length of its content.
+- [412](http://httpstatus.es/412) - Precondition Failed - Server does not meet request preconditions.
+- [413](http://httpstatus.es/413) - Request Entity Too Large - Request is larger than the server is willing or able to process.
+- [414](http://httpstatus.es/414) - Request URI Too Large - URI provided was too long for the server to process.
+- [415](http://httpstatus.es/415) - Unsupported Media Type - Server does not support media type.
+- [416](http://httpstatus.es/416) - Requested Rage Not Satisfiable - Client has asked for unprovidable portion of the file.
+- [417](http://httpstatus.es/417) - Expectation Failed - Server cannot meet requirements of Expect request-header field.
+- [418](http://httpstatus.es/418) - I'm a teapot - I'm a teapot.
+- [420](http://httpstatus.es/420) - Enhance Your Calm - Twitter rate limiting.
+- [422](http://httpstatus.es/422) - Unprocessable Entity - Request unable to be followed due to semantic errors.
+- [423](http://httpstatus.es/423) - Locked - Resource that is being accessed is locked.
+- [424](http://httpstatus.es/424) - Failed Dependency - Request failed due to failure of a previous request.
+- [426](http://httpstatus.es/426) - Upgrade Required - Client should switch to a different protocol.
+- [428](http://httpstatus.es/428) - Precondition Required - Origin server requires the request to be conditional.
+- [429](http://httpstatus.es/429) - Too Many Requests - User has sent too many requests in a given amount of time.
+- [431](http://httpstatus.es/429) - Request Header Fields Too Large - Server is unwilling to process the request.
+- [444](http://httpstatus.es/444) - No Response - Server returns no information and closes the connection.
+- [449](http://httpstatus.es/449) - Retry With - Request should be retried after performing action.
+- [450](http://httpstatus.es/450) - Blocked By Windows Parental Controls - Windows Parental Controls blocking access to webpage.
+- [451](http://httpstatus.es/451) - Wrong Exchange Server - The server cannot reach the client's mailbox.
+- [499](http://httpstatus.es/499) - Client Closed Request - Connection closed by client while HTTP server is processing.
 
 ### Server side error 5xx
 - [500](http://httpstatus.es/500) - Internal Error - The server encountered an unexpected condition which prevented it from fulfilling the request.
