@@ -67,6 +67,7 @@ The body section may contain a document describing the error in human readable f
 - [417](http://httpstatus.es/417) - **Expectation Failed** - Server cannot meet requirements of Expect request-header field.
 - [418](http://httpstatus.es/418) - **I'm a teapot** - I'm a teapot.
 - [420](http://httpstatus.es/420) - **Enhance Your Calm** - Twitter rate limiting.
+- [421](https://tools.ietf.org/html/rfc7540#page-66) - **Misdirected Request** - Server is not able to produce a response.
 - [422](http://httpstatus.es/422) - **Unprocessable Entity** - Request unable to be followed due to semantic errors.
 - [423](http://httpstatus.es/423) - **Locked** - Resource that is being accessed is locked.
 - [424](http://httpstatus.es/424) - **Failed Dependency** - Request failed due to failure of a previous request.
